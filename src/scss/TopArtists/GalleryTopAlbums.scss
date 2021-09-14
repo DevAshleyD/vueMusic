@@ -1,0 +1,71 @@
+
+/*Gallery Tops Albums */
+.box-top-images{
+  height: 300px;
+  margin-bottom: 4rem;
+  max-width: 588px;
+}
+.box-top-images figure:first-child,.box-top-images figure{
+  width: 45%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  float: left;
+  height: 100%;
+}
+.box-top-images.unique-album figure{
+  width: 300px;
+}
+.box-top-images figure{
+  width: 25%;
+  height: 50%;
+  border: solid 3px rgba(222, 89, 34, 0.32);
+  border-left: solid 1.5px rgba(222, 89, 34, 0.32);
+  cursor: pointer;
+  transition:all 0.6s ease-out;
+  will-change: auto;
+}
+.box-top-images figure:first-child{
+  border: solid 3px rgba(222, 89, 34, 0.32);
+}
+.box-top-images figure:hover{
+  transform: scale(1.1);
+  border: solid 3px rgb(222,89,34);
+  transition:all 0.6s ease-in;
+  z-index: 1;
+  position: relative;
+}
+.box-top-images figure:first-child img,.box-top-images figure img{
+  height: 100%;
+}
+.box-top-images figure:first-child figcaption{
+  top: -67px;
+  height: 60px;
+}
+.box-top-images figcaption{
+  position: relative;
+  top: -50px;
+  padding: 0 .2rem;
+  height: 43px;
+  background:rgba(0, 0, 0, 0.7);
+  transition:all 0.6s ease-out;
+  will-change: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box-top-images figure:hover figcaption{
+  background: rgba(0, 0, 0, 0.7);
+  transition:all 0.6s ease-in;
+}
+.box-top-images figure:first-child .name, .box-top-images figure:first-child .listeners{
+  font-size: .9rem;
+}
+.box-top-images figcaption .name,.box-top-images figcaption .listeners{
+  font-size: .7rem;
+  color: #fff;
+}
+.box-top-images figcaption .listeners{
+  font-size: .6rem;
+} 
